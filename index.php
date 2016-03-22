@@ -5,7 +5,21 @@
     <title>test</title>
 </head>
 <body>
-えべろーぶ：<input type="text" name="namae" size="40" maxlength="20">
-<input type="submit" value="でこーど">
+えべろーぶ：
+<form action = "index.php" method = "get">
+    <input type="text" name="decode">
+    <input type="submit" value="でこーど">
+<?php
+echo 'test';
+
+?>
+</form>
 </body>
 </html>
+
+<?php
+$comment = $_GET['decode'];
+echo $comment;
+echo "test";
+var_dump($comment);
+?>
