@@ -21,6 +21,7 @@
 function keyloop($input)
 
 {
+
     foreach($input as $key1=>$key2) {
         if (is_array($key2)||is_object($key2) ){
 
@@ -37,6 +38,7 @@ function keyloop($input)
             echo "</h1>";
             echo "</br>";
             keyloop($key1);
+            echo "key1";
 
         }
         else {
@@ -77,8 +79,12 @@ $mail_data = Mail_mimeDecode::decode($params);
 echo "</br>";
 echo "</br>";
 
-
+$From=$mail_data->headers['from'];
+var_dump($From);
+#var_dump($mail_data);
 keyloop($mail_data);
+
+
 
 
 ?>
