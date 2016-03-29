@@ -38,18 +38,18 @@ function keyloop($input)
             echo "</h1>";
             echo "</br>";
             keyloop($key1);
-           # echo "key1";
+            echo "key1";
 
         }
         else {
-            echo "<h1>";
+            echo "<h2>";
             echo $key1;
-            echo "</h1>";
+            echo "</h2>";
             echo "</br>";
-            echo $key2;
+            #echo $key2;
             var_dump($key2);
             echo "</br>";
-            echo "--------------------------------------------------------";
+            echo "------------------key2--------------------------------------";
             echo "</br>";
 
         }
@@ -80,8 +80,15 @@ echo "</br>";
 echo "</br>";
 
 $From=$mail_data->headers['from'];
-var_dump($From);
-#var_dump($mail_data);
+#var_dump($From);
+var_dump($mail_data);
+echo '</br>';
+echo '</br>';
+echo '</br>';
+echo '==============================[元のオブジェクト]=============================';
+
+
+
 keyloop($mail_data);
 
 
