@@ -38,7 +38,7 @@ function keyloop($input)
             echo "</h1>";
             echo "</br>";
             keyloop($key1);
-            echo "key1";
+           # echo "key1";
 
         }
         else {
@@ -46,7 +46,7 @@ function keyloop($input)
             echo $key1;
             echo "</h1>";
             echo "</br>";
-            #echo $key2;
+            echo $key2;
             var_dump($key2);
             echo "</br>";
             echo "--------------------------------------------------------";
